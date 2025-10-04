@@ -13,6 +13,10 @@ This project provides a simple REST API bridge between [Music Assistant](https:/
 - **Basic Auth**  
   Basic authentication when USERNAME and PASSWORD environment variables are provided. This can also be accomplished with a reverse proxy instead.
 
+## Home Assistant Addon
+
+This project is also available as a **Home Assistant addon** for easy integration. See the [addon documentation](addon/README.md) for installation instructions.
+
 ## Usage
 
 ### Running Locally
@@ -125,6 +129,8 @@ Returns `404` if no URL has been pushed yet.
 - `server.js` — Express server with the API endpoints.
 - `Dockerfile` — For containerizing the app.
 - `package.json` — Project metadata and dependencies.
+- `addon/` — Home Assistant addon files.
+- `repository.yaml` — Home Assistant addon repository configuration.
 
 ## License
 
