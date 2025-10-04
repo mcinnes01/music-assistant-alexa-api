@@ -3,7 +3,7 @@ const auth = require('basic-auth');
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = process.env.PORT | 3000;
+const PORT = process.env.PORT || 3000;
 const USERNAME = process.env.USERNAME;
 const PASSWORD = process.env.PASSWORD;
 
