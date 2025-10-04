@@ -10,16 +10,16 @@ RUN apk add --no-cache \
 WORKDIR /app
 
 # Copy package files first for better caching
-COPY package*.json ./
+COPY ../package*.json ./
 
 # Install dependencies
 RUN npm install --production
 
 # Copy application files
-COPY server.js ./
+COPY ../server.js ./
 
 # Copy addon run script
-COPY addon/run.sh /
+COPY run.sh /
 RUN chmod a+x /run.sh
 
 # Expose port

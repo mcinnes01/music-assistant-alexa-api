@@ -3,7 +3,6 @@ version: "1.0.0"
 slug: music_assistant_alexa_api
 description: "API bridge between Music Assistant and Alexa skill"
 url: "https://github.com/mcinnes01/music-assistant-alexa-api"
-dockerfile: Dockerfile.addon
 arch:
   - armhf
   - armv7
